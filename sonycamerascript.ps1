@@ -10,7 +10,7 @@
         $mes = $Matches[2]
         $anio = $Matches[3]
 
-        if(($anio -eq "2019")) {
+        if(($anio -eq "2021")) {
             $destPath = "C:\tmp\sonycamera\$anio\$anio-$mes-$dia"
             if((test-Path $destPath) -eq $False) {
                 mkdir $destPath
@@ -47,4 +47,4 @@ function CheckMissingFiles() {
 
 }
 
-CheckMissingFiles
+CopyFilesAndFixNames
